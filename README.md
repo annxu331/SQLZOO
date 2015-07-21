@@ -1,3 +1,3 @@
-SQL Shootout
+# SQL Shootout
 
-Answers for the SQL tutorial on http://sqlzoo.net/wiki/SQL_Tutorial
+Answers for the SQL tutorial on [SQLZOO](http://sqlzoo.net/wiki/SQL_Tutorial)
