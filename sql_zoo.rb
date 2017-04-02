@@ -1,7 +1,8 @@
-
 0 SELECT BASICS
 
+
 TABLE WORLD:
+
 
 name	      continent	area 	     population	   gdp
 Afghanistan	Asia	    652230	   25500100	     20343000000
@@ -43,6 +44,7 @@ WHERE name LIKE 'G%';
 
 
 1 SELECT name
+
 
 TABLE WORLD:
 
@@ -129,12 +131,7 @@ WHERE  capital = concat(name, ' City');
 13.) Find the capital and the name where the capital includes the name of the country.
 
 
-
-
-
-
 2 SELECT from world
-
 
 
 2.) Show the name for the countries that have a population of at least 200 million.
@@ -192,9 +189,8 @@ FROM world
 WHERE GDP > 1000000000000;
 
 
-
-
 3 SELECT from NOBEL
+
 
 nobel(yr, subject, winner)
 
@@ -274,10 +270,6 @@ FROM nobel
 WHERE winner LIKE ('Sir%');
 
 
-
-
-
-
 04 Select within Select
 
 
@@ -341,7 +333,6 @@ WHERE area >= ALL
         AND area > 0);
 
 
-
 06 Join 
 
 
@@ -393,10 +384,7 @@ JOIN game ON (id = matchid)
 WHERE stadium = 'National Stadium, Warsaw';
 
 
-
-
 07 More join operations
-
 
 
 1.) List the films where the yr is 1962 [Show id, title] 
@@ -476,8 +464,6 @@ SELECT title, name FROM movie
 JOIN casting ON movie.id = movieid
 JOIN actor   ON actorid = actor.id
 WHERE yr = 1962 AND ord = 1;
-
-
 
 
 08 using NULL
@@ -561,8 +547,6 @@ SELECT name,
 FROM teacher;
 
 
-
-
 + Numeric Examples
 
 
@@ -611,13 +595,7 @@ GROUP BY subject;
 6.) Show the percentage of students who A_STRONGLY_AGREE to question 22 for the subject '(8) Computer Science' show the same figure for the subject '(H) Creative Arts and Design'. 
 
 
-
-
-
-
-
 09 Self join
-
 
 
 1.) How many stops are in the database. 
@@ -692,12 +670,3 @@ FROM route a JOIN route b ON
   JOIN stops stopa ON (a.stop=stopa.id)
   JOIN stops stopb ON (b.stop=stopb.id)
 WHERE stopa.name='Craiglockhart' AND a.company = 'LRT';
-
-
-
-
-
-
-
-
-
