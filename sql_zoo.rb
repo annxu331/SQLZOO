@@ -268,7 +268,13 @@ WHERE winner = 'EUGENE O''(')NEILL';
 SELECT winner, yr, subject
 FROM nobel
 WHERE winner LIKE ('Sir%');
-
+/* correct answer
+        SELECT  winner, yr,subject
+FROM nobel
+WHERE winner LIKE ('Sir%')
+order by yr desc, winner asc
+;
+    */
 
 04 Select within Select
 
